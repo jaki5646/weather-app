@@ -1,0 +1,68 @@
+.searched {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%);
+    background: white;
+}
+.searched-form {
+    text-align: center;
+    border-bottom: 1px solid gray;
+}
+.searched-form>form {
+    position: relative;
+}
+.searched-form input {
+    padding: 12px;
+    width: 300px;
+    height: 2rem;
+    border: none;
+}
+.searched-form button {
+    position: absolute;
+    right: 0px;
+    height: 34px;
+    width: 34px;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: blue;
+    cursor: pointer;
+}
+.searched-info {
+    text-align: center;
+}
+.searched-location {
+    margin: 2rem 0;
+}
+.searched-weather {
+    margin-bottom: 1rem;
+}
+.searched-weather img {
+    width: 157px;
+    height: 157px;
+}
+.searched-weather img {
+    margin-bottom: 1rem;
+}
+.searched-temp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.searched-fail {
+    text-align: center;
+}
+.search-wind, .search-humidity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.2rem;
+}
+.search-humidity {
+    gap: 5px;
+}
