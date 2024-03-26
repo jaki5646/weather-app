@@ -11,7 +11,6 @@ export const baseURL = "29226d1647109c22eee56c6a64322f6a";
 const App = () => {
   const [loading, setLoading] = useState(false);
   const [input, setInput] = useState("");
-  const [data, setData] = useState();
   const handleClick = (e) => {
     e.preventDefault();
     setLoading(true);
@@ -22,7 +21,6 @@ const App = () => {
       .then((res) => localStorage.setItem("query", JSON.stringify(res?.data)))
       .catch((e) => localStorage.setItem("query", null));
     setInput("");
-    localStorage.getItem("query") !== null && setData(JSON.parse(localStorage.getItem('query')))
     setTimeout(() => {
       setLoading(false);
     }, 300);
